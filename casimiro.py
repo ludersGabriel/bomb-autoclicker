@@ -59,31 +59,31 @@ def main():
     y2 = random.randint(6, 27)
     moveTo(x1, y1, x2, y2) # move to tab
     pyautogui.click()
-    sleepTime = random.random() + 0.2 
+    sleepTime = random.random() + 0.4 
     time.sleep(sleepTime)
     x1, y1 = pyautogui.position()
-    x2 = random.randint(916, 934)
-    y2 = random.randint(673, 683)
+    x2 = random.randint(918, 932)
+    y2 = random.randint(677, 683)
     moveTo(x1, y1, x2, y2) # move to arrow that opens heroes
     pyautogui.click()
-    sleepTime = random.random() + 0.3
+    sleepTime = random.random() + 0.4
     time.sleep(sleepTime)
     pyautogui.click()
-    sleepTime = random.random() + 0.7
+    sleepTime = random.random() + 1
     time.sleep(sleepTime)
     x1, y1 = pyautogui.position()
-    x2 = random.randint(832, 870)
-    y2 = random.randint(301, 315)
+    x2 = random.randint(838, 870)
+    y2 = random.randint(303, 312)
     moveTo(x1, y1, x2, y2) # moves to all work
     pyautogui.click()
-    sleepTime = random.random() + 0.3
+    sleepTime = random.random() + 0.5
     time.sleep(sleepTime)
     x1, y1 = pyautogui.position()
     x2 = random.randint(965, 993)
     y2 = random.randint(248, 263)
     moveTo(x1, y1, x2, y2) # moves to X
     pyautogui.click()
-    sleepTime = random.random() + 0.5
+    sleepTime = random.random() + 0.8
     time.sleep(sleepTime)
     pyautogui.click()
     sleepTime = random.random() + 0.5
@@ -93,7 +93,7 @@ def main():
     y2 = random.randint(6, 27)
     moveTo(x1, y1, x2, y2) # moves to second tab
     pyautogui.click()
-    sleepTime = random.random() + 0.3
+    sleepTime = random.random() + 0.4
     time.sleep(sleepTime)
     
 
