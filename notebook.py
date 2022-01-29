@@ -54,11 +54,6 @@ def moveTo(x1, y1, x2, y2):
 
 def main():
   while True:
-    x1, y1 = pyautogui.position()
-    x2 = random.randint(76, 311)
-    y2 = random.randint(6, 27)
-    moveTo(x1, y1, x2, y2) # move to tab
-    pyautogui.click()
     sleepTime = random.random() + 0.4
     time.sleep(sleepTime)
     x1, y1 = pyautogui.position()
@@ -89,13 +84,9 @@ def main():
     sleepTime = random.random() + 0.5
     time.sleep(sleepTime)
     x1, y1 = pyautogui.position()
-    x2 = random.randint(378, 599)
-    y2 = random.randint(6, 27)
-    moveTo(x1, y1, x2, y2) # moves to second tab
-    pyautogui.click()
-    sleepTime = random.random() + 0.4
-    time.sleep(sleepTime)
-    
+    x2 = random.randint(0, 1920)
+    y2 = random.randint(0, 1080)
+    moveTo(x1, y1, x2, y2)    
 
     waitTime = 0
     while(waitTime < 780):
@@ -104,10 +95,6 @@ def main():
       if(sleepTime + waitTime > 780):
         sleepTime = 780 - waitTime + random.randint(1, 30)
       
-      x1, y1 = pyautogui.position()
-      x2 = random.randint(0, 1920)
-      y2 = random.randint(0, 1080)
-      moveTo(x1, y1, x2, y2)
       time.sleep(sleepTime)
       waitTime += sleepTime
       print(f'total time waiting: {waitTime}')
